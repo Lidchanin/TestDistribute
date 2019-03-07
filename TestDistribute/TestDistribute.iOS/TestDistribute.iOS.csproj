@@ -117,16 +117,28 @@
     <MtouchVerbosity>2</MtouchVerbosity>
     <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppCenterDev|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\AppCenterDev</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
-    <None Include="Info.plist" />
+    <None Include="Info.plist" Condition="'$(Configuration)' != 'AppCenterDev' " >
+      <SubType>Designer</SubType>
+    </None>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="Info_Dev.plist" Condition=" '$(Configuration)|$(Platform)' == 'AppCenterDev|iPhone' ">
+    <None Include="Info_Dev.plist" Condition=" '$(Configuration)' == 'AppCenterDev' ">
       <LogicalName>Info.plist</LogicalName>
     </None>
-    <None Include="Info_Master.plist" Condition=" '$(Configuration)|$(Platform)' == 'AppCenterMaster|iPhone' ">
+    <None Include="Info_Master.plist" Condition=" '$(Configuration)' == 'AppCenterMaster' ">
       <LogicalName>Info.plist</LogicalName>
     </None>
   </ItemGroup>

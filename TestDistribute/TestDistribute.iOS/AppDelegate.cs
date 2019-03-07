@@ -29,6 +29,8 @@ namespace TestDistribute.iOS
 
             var token = NSBundle.MainBundle.ObjectForInfoDictionary("APPCENTER_TOKEN").ToString();
 
+            Console.WriteLine($"------{token}");
+
             AppCenter.Start(token, typeof(Distribute));
 
             return base.FinishedLaunching(app, options);
