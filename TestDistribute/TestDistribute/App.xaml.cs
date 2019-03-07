@@ -1,4 +1,7 @@
 ﻿using System;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Distribute;
+using TestDistribute.Helpers;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -16,7 +19,8 @@ namespace TestDistribute
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            AppCenter.Start($"android={ConstantHelper.AppCenterToken}",
+                typeof(Distribute));
         }
 
         protected override void OnSleep()
