@@ -98,7 +98,7 @@ fi
 if [ -e "${CONSTANT_HELPER_FILE}" ]
 then
 	echo "##[command][Pre-Build Action] - Changing the  app secret on Android to: ${ANDROID_APP_SECRET} "
-	sed -i '' 's/AppCenterToken = \"[-a-zA-Z0-9]*\"/AppCenterToken = "'$APP_TOKEN'"/' $CONSTANT_HELPER_FILE
+	sed -i '' 's/AppCenterToken = \"[-a-zA-Z0-9]*\"/AppCenterToken = "'$ANDROID_APP_SECRET'"/' $CONSTANT_HELPER_FILE
 
     echo "##[section][Pre-Build Action] - ConstantHelper.cs File content:"
     cat ${CONSTANT_HELPER_FILE}
