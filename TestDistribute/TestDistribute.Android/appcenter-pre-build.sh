@@ -88,7 +88,7 @@ fi
 if [ -e "${ANDROID_MANIFEST_FILE}" ]
 then
 	echo "##[command][Pre-Build Action] - Changing the package name on Android to: ${PACKAGE_NAME} "
-	sed -i '' 's/package="[^"]*"/package="'$PACKAGE_NAME'"/' $ANDROID_MANIFEST_FILE
+	sed -i '' 's/package=\".*?\"/package="'$PACKAGE_NAME'"/' $ANDROID_MANIFEST_FILE
 
     echo "##[section][Pre-Build Action] - AndroidManifest.xml File content:"
     cat ${ANDROID_MANIFEST_FILE}
