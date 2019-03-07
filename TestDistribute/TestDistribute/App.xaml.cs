@@ -19,8 +19,6 @@ namespace TestDistribute
 
         protected override void OnStart()
         {
-            AppCenter.Start($"android={ConstantHelper.AppCenterToken}",
-                typeof(Distribute));
         }
 
         protected override void OnSleep()
