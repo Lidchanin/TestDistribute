@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.TestDistributeDev">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.TestDistributeMaster">
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
-	<application android:label="TestDistributDev">
+	<application android:label="TestDistributMaster">
 		<meta-data android:name="APPCENTER_TOKEN" android:value="9869bd5a-59d4-4546-be01-e143ae114d5e" />
 	</application>
 </manifest>
