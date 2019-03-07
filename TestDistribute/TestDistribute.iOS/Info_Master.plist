@@ -23,9 +23,9 @@
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>TestDistribute</string>
+	<string>TestDistributeMaster</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.TestDistribute</string>
+	<string>com.companyname.TestDistributeMaster</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
@@ -35,6 +35,6 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>APPCENTER_TOKEN</key>
-	<string>ADD DEV SECURE HERE</string>
+	<string>ADD MASTER SECURE HERE</string>
 </dict>
 </plist>

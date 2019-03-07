@@ -23,9 +23,9 @@
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>TestDistribute</string>
+	<string>TestDistributeDev</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.TestDistribute</string>
+	<string>com.companyname.TestDistributeDev</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
