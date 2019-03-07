@@ -6,13 +6,14 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Distribute;
 
 namespace TestDistribute.Droid
 {
-    [Activity(Label = "TestDistribute", 
-        Icon = "@mipmap/icon", 
-        Theme = "@style/MainTheme", 
-        MainLauncher = true, 
+    [Activity(Icon = "@mipmap/icon",
+        Theme = "@style/MainTheme",
+        MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
@@ -23,6 +24,13 @@ namespace TestDistribute.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+            var token = PackageManager.GetApplicationInfo(PackageName, PackageInfoFlags.MetaData).MetaData.GetString("APPCENTER_TOKEN");
+
+            Console.WriteLine($"-----{token}");
+
+            AppCenter.Start(token, typeof(Distribute));
+
             LoadApplication(new App());
         }
     }

@@ -23,6 +23,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|iPhone = Release|iPhone
 		Release|iPhoneSimulator = Release|iPhoneSimulator
+		AppCenterDev|Any CPU = AppCenterDev|Any CPU
+		AppCenterDev|iPhone = AppCenterDev|iPhone
+		AppCenterMaster|Any CPU = AppCenterMaster|Any CPU
+		AppCenterMaster|iPhone = AppCenterMaster|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,6 +65,14 @@ Global
 		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.AppCenterDev|Any CPU.ActiveCfg = AppCenterDev|Any CPU
+		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.AppCenterDev|Any CPU.Build.0 = AppCenterDev|Any CPU
+		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.AppCenterDev|iPhone.ActiveCfg = AppCenterDev|iPhone
+		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.AppCenterMaster|Any CPU.ActiveCfg = AppCenterMaster|Any CPU
+		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.AppCenterMaster|Any CPU.Build.0 = AppCenterMaster|Any CPU
+		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.AppCenterMaster|iPhone.ActiveCfg = AppCenterMaster|iPhone
+		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.AppCenterDev|iPhone.Deploy.0 = AppCenterDev|iPhone
+		{3EF82AD0-18B5-4DC6-A077-8FAB80720BA0}.AppCenterMaster|iPhone.Deploy.0 = AppCenterMaster|iPhone
 		{19D32A38-D498-4659-8179-9038EA059396}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone
 		{19D32A38-D498-4659-8179-9038EA059396}.Ad-Hoc|Any CPU.Build.0 = Ad-Hoc|iPhone
 		{19D32A38-D498-4659-8179-9038EA059396}.Ad-Hoc|Any CPU.Deploy.0 = Ad-Hoc|iPhone
@@ -97,6 +109,14 @@ Global
 		{19D32A38-D498-4659-8179-9038EA059396}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{19D32A38-D498-4659-8179-9038EA059396}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{19D32A38-D498-4659-8179-9038EA059396}.Release|iPhoneSimulator.Deploy.0 = Release|iPhoneSimulator
+		{19D32A38-D498-4659-8179-9038EA059396}.AppCenterDev|Any CPU.ActiveCfg = AppCenterDev|Any CPU
+		{19D32A38-D498-4659-8179-9038EA059396}.AppCenterDev|iPhone.ActiveCfg = AppCenterDev|iPhone
+		{19D32A38-D498-4659-8179-9038EA059396}.AppCenterDev|iPhone.Build.0 = AppCenterDev|iPhone
+		{19D32A38-D498-4659-8179-9038EA059396}.AppCenterMaster|Any CPU.ActiveCfg = AppCenterMaster|Any CPU
+		{19D32A38-D498-4659-8179-9038EA059396}.AppCenterMaster|iPhone.ActiveCfg = AppCenterMaster|iPhone
+		{19D32A38-D498-4659-8179-9038EA059396}.AppCenterMaster|iPhone.Build.0 = AppCenterMaster|iPhone
+		{19D32A38-D498-4659-8179-9038EA059396}.AppCenterDev|iPhone.Deploy.0 = AppCenterDev|iPhone
+		{19D32A38-D498-4659-8179-9038EA059396}.AppCenterMaster|iPhone.Deploy.0 = AppCenterMaster|iPhone
 		{4604D64F-FE78-4277-BF58-852DD58266AE}.Ad-Hoc|Any CPU.ActiveCfg = Debug|Any CPU
 		{4604D64F-FE78-4277-BF58-852DD58266AE}.Ad-Hoc|Any CPU.Build.0 = Debug|Any CPU
 		{4604D64F-FE78-4277-BF58-852DD58266AE}.Ad-Hoc|Any CPU.Deploy.0 = Debug|Any CPU
@@ -133,6 +153,16 @@ Global
 		{4604D64F-FE78-4277-BF58-852DD58266AE}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{4604D64F-FE78-4277-BF58-852DD58266AE}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{4604D64F-FE78-4277-BF58-852DD58266AE}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
+		{4604D64F-FE78-4277-BF58-852DD58266AE}.AppCenterDev|Any CPU.ActiveCfg = AppCenterDev|Any CPU
+		{4604D64F-FE78-4277-BF58-852DD58266AE}.AppCenterDev|Any CPU.Build.0 = AppCenterDev|Any CPU
+		{4604D64F-FE78-4277-BF58-852DD58266AE}.AppCenterDev|iPhone.ActiveCfg = AppCenterDev|iPhone
+		{4604D64F-FE78-4277-BF58-852DD58266AE}.AppCenterDev|iPhone.Build.0 = AppCenterDev|iPhone
+		{4604D64F-FE78-4277-BF58-852DD58266AE}.AppCenterMaster|Any CPU.ActiveCfg = AppCenterMaster|Any CPU
+		{4604D64F-FE78-4277-BF58-852DD58266AE}.AppCenterMaster|Any CPU.Build.0 = AppCenterMaster|Any CPU
+		{4604D64F-FE78-4277-BF58-852DD58266AE}.AppCenterMaster|iPhone.ActiveCfg = AppCenterMaster|iPhone
+		{4604D64F-FE78-4277-BF58-852DD58266AE}.AppCenterMaster|iPhone.Build.0 = AppCenterMaster|iPhone
+		{4604D64F-FE78-4277-BF58-852DD58266AE}.AppCenterDev|iPhone.Deploy.0 = AppCenterDev|iPhone
+		{4604D64F-FE78-4277-BF58-852DD58266AE}.AppCenterMaster|iPhone.Deploy.0 = AppCenterMaster|iPhone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
