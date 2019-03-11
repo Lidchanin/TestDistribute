@@ -32,9 +32,9 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>TestDistribute</string>
+	<key>APPCENTER_TOKEN</key>
+	<string>ADD DEBUG SECURE HERE</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
-	<key>APPCENTER_TOKEN</key>
-	<string>ADD DEV SECURE HERE</string>
 </dict>
 </plist>
