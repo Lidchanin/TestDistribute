@@ -94,7 +94,7 @@
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Properties\AndroidManifestDev.xml" />
-    <None Include="Properties\AndroidManifestDevMaster.xml" />
+    <None Include="Properties\AndroidManifestMaster.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
@@ -113,6 +113,8 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon_dev.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon_master.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
