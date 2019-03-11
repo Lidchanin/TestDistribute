@@ -11,8 +11,7 @@ using Microsoft.AppCenter.Distribute;
 
 namespace TestDistribute.Droid
 {
-    [Activity(Icon = "@mipmap/icon",
-        Theme = "@style/MainTheme",
+    [Activity(Theme = "@style/MainTheme",
         MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity

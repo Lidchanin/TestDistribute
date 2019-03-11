@@ -64,19 +64,6 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
-    <DebugType>none</DebugType>
-    <Optimize>True</Optimize>
-    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <ConsolePause>False</ConsolePause>
-    <MtouchArch>ARM64</MtouchArch>
-    <BuildIpa>True</BuildIpa>
-    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
-    <CodesignKey>iPhone Distribution</CodesignKey>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>none</DebugType>
     <Optimize>True</Optimize>
@@ -88,16 +75,6 @@
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
     <CodesignKey>iPhone Distribution</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppCenterDev|AnyCPU' ">
-    <Optimize>false</Optimize>
-    <OutputPath>bin\AppCenterDev</OutputPath>
-    <DefineConstants></DefineConstants>
-    <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
-    <MtouchVerbosity></MtouchVerbosity>
-    <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppCenterDev|iPhone' ">
     <Optimize>true</Optimize>
@@ -111,16 +88,6 @@
     <ConsolePause>false</ConsolePause>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchVerbosity>2</MtouchVerbosity>
-    <MtouchLink>SdkOnly</MtouchLink>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppCenterMaster|AnyCPU' ">
-    <Optimize>false</Optimize>
-    <OutputPath>bin\AppCenterMaster</OutputPath>
-    <DefineConstants></DefineConstants>
-    <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
-    <MtouchVerbosity></MtouchVerbosity>
     <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppCenterMaster|iPhone' ">
@@ -137,12 +104,40 @@
     <MtouchVerbosity>2</MtouchVerbosity>
     <MtouchLink>SdkOnly</MtouchLink>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppCenterDev|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\AppCenterDev</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppCenterMaster|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\AppCenterMaster</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
-    <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Info.plist" Condition="'$(Configuration)' != 'AppCenterDev' And '$(Configuration)' != 'AppCenterMaster' ">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Info_Dev.plist" Condition=" '$(Configuration)' == 'AppCenterDev' ">
+      <LogicalName>Info.plist</LogicalName>
+    </None>
+    <None Include="Info_Master.plist" Condition=" '$(Configuration)' == 'AppCenterMaster' ">
+      <LogicalName>Info.plist</LogicalName>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -188,6 +183,38 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPhone-Notification%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPhone-Notification%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPhone-Spotlight-7-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPhone-Spotlight-7-11%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPhone-App-7-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPhone-App-7-11%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPad-Notifications-7-11.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPad-Notifications-7-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPad-Settings-5-11.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPad-Settings-5-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPad-Spotlight-7-11.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPad-Spotlight-7-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPad-App-7-11.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\iPad-App-7-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconDev.appiconset\App-Store.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPhone-Notification%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPhone-Notification%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPhone-Spotlight-7-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPhone-Spotlight-7-11%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPhone-App-7-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPhone-App-7-11%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPad-Notifications-7-11.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPad-Notifications-7-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPad-Settings-5-11.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPad-Settings-5-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPad-Spotlight-7-11.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPad-Spotlight-7-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPad-App-7-11.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\iPad-App-7-11%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIconMaster.appiconset\App-Store.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -197,6 +224,12 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Microsoft.AppCenter">
+      <Version>1.13.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Distribute">
+      <Version>1.13.2</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -204,5 +237,10 @@
       <Project>{4604D64F-FE78-4277-BF58-852DD58266AE}</Project>
       <Name>TestDistribute</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\AppIconDev.appiconset\" />
+    <Folder Include="Assets.xcassets\AppIconDev.appiconset\" />
+    <Folder Include="Assets.xcassets\AppIconMaster.appiconset\" />
   </ItemGroup>
 </Project>

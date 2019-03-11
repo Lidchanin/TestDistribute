@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Distribute;
 using UIKit;
 
 namespace TestDistribute.iOS
@@ -24,6 +26,12 @@ namespace TestDistribute.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+
+            var token = NSBundle.MainBundle.ObjectForInfoDictionary("APPCENTER_TOKEN").ToString();
+
+            Console.WriteLine($"------{token}");
+
+            AppCenter.Start(token, typeof(Distribute));
 
             return base.FinishedLaunching(app, options);
         }

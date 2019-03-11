@@ -52,11 +52,6 @@
     <AndroidSupportedAbis>armeabi-v7a;x86</AndroidSupportedAbis>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppCenterDev|iPhone' ">
-    <Optimize>false</Optimize>
-    <OutputPath>bin\iPhone\AppCenterDev</OutputPath>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppCenterMaster|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>pdbonly</DebugType>
@@ -67,11 +62,6 @@
     <AndroidManifest>Properties\AndroidManifestMaster.xml</AndroidManifest>
     <AndroidSupportedAbis>armeabi-v7a;x86</AndroidSupportedAbis>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppCenterMaster|iPhone' ">
-    <Optimize>false</Optimize>
-    <OutputPath>bin\iPhone\AppCenterMaster</OutputPath>
-    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -104,7 +94,7 @@
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Properties\AndroidManifestDev.xml" />
-    <None Include="Properties\AndroidManifestDevMaster.xml" />
+    <None Include="Properties\AndroidManifestMaster.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
@@ -123,6 +113,8 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon_dev.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\icon_master.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
