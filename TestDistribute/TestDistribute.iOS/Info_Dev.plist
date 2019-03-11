@@ -33,7 +33,7 @@
 	<key>CFBundleName</key>
 	<string>TestDistribute</string>
 	<key>APPCENTER_TOKEN</key>
-	<string>ADD DEV SECURE HERE</string>
+	<string>3a7d968f-08fb-461c-8386-95f92f8cc0e7</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIconDev.appiconset</string>
 </dict>
