@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>TestDistribute</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.TestDistributeDev</string>
+	<string>com.cogniteq.TestDistributeDev</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
